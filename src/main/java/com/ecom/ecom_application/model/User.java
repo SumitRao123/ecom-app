@@ -1,10 +1,7 @@
 package com.ecom.ecom_application.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Generated;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -15,6 +12,7 @@ import java.time.LocalDateTime;
 @Table(name = "user_table")
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class User {
 
     @Id
